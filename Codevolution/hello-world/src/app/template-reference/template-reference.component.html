@@ -1,0 +1,7 @@
+<h1>
+  {{title}}
+</h1>
+
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log Text</button>
+<button (click)="logMessage(myInput)">Log Element</button>

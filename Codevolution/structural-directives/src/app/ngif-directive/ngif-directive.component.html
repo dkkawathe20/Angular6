@@ -1,0 +1,15 @@
+<h1>
+  <p>
+    {{title}}
+  </p>
+</h1>
+<div *ngIf="displayName; then thenBlock else elseBlock">
+
+</div>
+
+<ng-template #thenBlock>
+  <h1>Code Evolution</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h2> Name is hidden</h2>
+</ng-template>
