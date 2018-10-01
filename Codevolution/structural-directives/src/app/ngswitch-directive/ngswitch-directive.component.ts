@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NgswitchDirectiveComponent implements OnInit {
 
   title = "NgSwitch Directive";
-  color = "red";
+  color = "green";
   constructor() { }
 
   ngOnInit() {

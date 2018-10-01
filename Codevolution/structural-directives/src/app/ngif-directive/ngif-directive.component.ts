@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NgifDirectiveComponent implements OnInit {
 
   title = "NgIf Directive";
-  displayName = true;
+  displayName = false;
 
   constructor() { }
 

@@ -4,6 +4,9 @@
   </p>
 </h1>
 
-<div>
-
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'" [style.color]="color"> You picked red color</div>
+  <div *ngSwitchCase="'blue'" [style.color]="color">You picked blue color</div>
+  <div *ngSwitchCase="'green'" [style.color]="color">You picked green color</div>
+  <div *ngSwitchDefault [style.color]="'red'"> Invalid! pick again </div>
 </div>
