@@ -1,0 +1,7 @@
+<p>
+  {{title}}
+</p>
+
+<ul *ngFor="let employee of employees">
+  <li>{{employee.id}} - {{employee.name | uppercase}} - {{employee.Age}}</li>
+</ul>
