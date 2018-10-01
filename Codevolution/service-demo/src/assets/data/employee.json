@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "misko hevery",
+    "age": 50,
+    "info": "AngularJS"
+  },
+  {
+    "id": 2,
+    "name": "adom abrons",
+    "age": 51,
+    "info": "AngularJS"
+  },
+  {
+    "id": 3,
+    "name": "brendan eich",
+    "age": 60,
+    "info": "JavaScript"
+  },
+  {
+    "id": 4,
+    "name": "guido van rossum",
+    "age": 55,
+    "info": "Python"
+  }
+]
