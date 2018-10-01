@@ -1,0 +1,15 @@
+<h1>
+  <p>
+    {{title}}
+  </p>
+</h1>
+
+<div *ngFor="let color of colors;index as i, last as l; first as f; odd as o; even as e">
+  <h2 [style.color]="color">
+    Index:{{i}},
+    IsFirst:{{f}},
+    IsLast:{{l}},
+    IsOdd:{{o}},
+    IsEven:{{e}}
+    {{color}}</h2>
+</div>
