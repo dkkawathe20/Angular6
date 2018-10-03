@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IEmployee } from '../models/employee';
-import { Observable } from 'rxjs'; //in sangular 5: 'rxjs/Observable'
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+// below are code for ng 5
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/observable/throw';
 
 
 @Injectable({
@@ -9,10 +14,18 @@ import { Observable } from 'rxjs'; //in sangular 5: 'rxjs/Observable'
 })
 export class EmployeeService {
 
-  private _url: string = "./assets/data/employee.json";
+  private _url: string = "./assets/data/employee1.json";
+
   constructor(private http: HttpClient) { }
 
   getEmployees(): Observable<IEmployee[]> {
-    return this.http.get<IEmployee[]>(this._url);
+    return this.http.get<IEmployee[]>(this._url)
+      .pipe(
+        //tap(employees => this.log('fethed employees')),
+        catchError(this.handleError)
+      );
+  }
+  private handleError(error: HttpErrorResponse) {
+    return throwError(error.message || "Internal Server error");
   }
 }
