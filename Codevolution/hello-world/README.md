@@ -1,5 +1,5 @@
 # HelloWorld
-Note: To update npm to latest refer this [article](https://github.com/felixrieseberg/npm-windows-upgrade)
+Note: To update nodejs/npm to latest refer this [article](https://github.com/felixrieseberg/npm-windows-upgrade)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
